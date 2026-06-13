@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Sonam Maan — B.Tech Computer Science & AI student from Pune. Building scalable web applications.",
+          "Portfolio of Sonam Maan — B.Tech Computer Science & IT student from Pune. Building scalable web applications.",
       },
       { property: "og:title", content: "Sonam Maan — Aspiring Software Developer" },
       {
