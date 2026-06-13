@@ -91,6 +91,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sonam Maan — Aspiring Software Developer" },
+      { name: "description", content: "A modern, recruiter-focused developer portfolio showcasing skills, projects, and experience." },
+      { property: "og:description", content: "A modern, recruiter-focused developer portfolio showcasing skills, projects, and experience." },
+      { name: "twitter:description", content: "A modern, recruiter-focused developer portfolio showcasing skills, projects, and experience." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/793fa338-d8c2-4af7-8ac7-08b107856874/id-preview-e042a5aa--68c5bb3a-f2a7-4325-8b09-d71d9e34263a.lovable.app-1781372142896.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/793fa338-d8c2-4af7-8ac7-08b107856874/id-preview-e042a5aa--68c5bb3a-f2a7-4325-8b09-d71d9e34263a.lovable.app-1781372142896.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
