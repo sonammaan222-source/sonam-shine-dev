@@ -385,8 +385,8 @@ function About() {
           </SectionHeading>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm a second-year B.Tech student pursuing Computer Science and Artificial
-              Intelligence at <span className="text-foreground">Anuta School of Technology, Ajinkya
+              I'm a second-year B.Tech student pursuing Computer Science and Information
+              Technology at <span className="text-foreground">Alta School of Technology, Ajinkya
               D.Y. Patil Institute of Engineering, Pune</span>. My time so far has been split
               between coursework, side projects, and the quiet joy of figuring things out.
             </p>
@@ -436,7 +436,7 @@ function Education() {
           <TimelineItem
             side="left"
             icon={<GraduationCap className="size-5" />}
-            title="B.Tech — Computer Science & Artificial Intelligence"
+            title="B.Tech — Computer Science & Information Technology"
             org="Ajinkya D.Y. Patil Institute of Engineering, Pune"
             meta="In progress · Entering 2nd year"
             tags={["CGPA 9.1", "First Year Completed"]}
@@ -444,10 +444,10 @@ function Education() {
           <TimelineItem
             side="right"
             icon={<BookOpen className="size-5" />}
-            title="Anuta School of Technology"
-            org="Affiliated program — CS & AI track"
+            title="Alta School of Technology"
+            org="Affiliated program — CS & IT track"
             meta="Coursework, fundamentals & projects"
-            tags={["DSA", "DBMS", "AI Foundations"]}
+            tags={["DSA", "DBMS", "IT Foundations"]}
           />
         </div>
       </div>
