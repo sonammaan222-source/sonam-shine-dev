@@ -27,6 +27,7 @@ import {
   Mail,
   Send,
   Github as GithubIcon,
+  Briefcase,
 } from "lucide-react";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
