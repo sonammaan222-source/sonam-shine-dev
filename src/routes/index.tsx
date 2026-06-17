@@ -985,105 +985,118 @@ function Resume() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl bg-white/95 text-neutral-900 aspect-[3/4] p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform overflow-y-auto max-h-[500px]">
-              <div className="border-b border-neutral-200 pb-3">
-                <div className="font-display font-bold text-xl whitespace-pre-wrap">SONAM MAAN
-
-B.Tech Student (Computer Science & Artificial Intelligence) | Aspiring Software Developer
-
-GitHub: github.com/sonammaan222-source
-LinkedIn: linkedin.com/in/sonam-maan-860409332
-LeetCode | Codeforces | HackerRank
-
-Professional Summary
-
-Second-year B.Tech student in Computer Science and Artificial Intelligence with strong academic performance (CGPA: 9.1). Interested in software development, scalable web applications, and continuous learning across AI, data, and cybersecurity.
-
-Education
-
-B.Tech – Computer Science and Artificial Intelligence
-Ajinkya D.Y. Patil Institute of Engineering, Pune (Anuta School of Technology)
-Current Year: Second Year | CGPA: 9.1
-
-Technical Skills
-
-Languages: C, Java, Python
-
-Frontend: HTML, CSS
-
-Backend: Java
-
-Database: MySQL
-
-Areas of Interest: Generative AI, Data Science, Data Analytics, Cybersecurity
-
-Projects
-
-Access Notes
-
-Modern note-taking platform for organizing notes and content.
-
-Live: https://accessnotesapp.vercel.app/
-
-Cosmic Glow Insights
-
-Astrology and numerology themed web experience with guided prediction flow and immersive UI.
-
-Live: https://cosmic-glow-insights.lovable.app/
-
-Certifications
-
-Generative AI & LLMs – Sunstone School of Technology (Feb 2026)
-
-Introduction to Data Science – Cisco Networking Academy
-
-Introduction to Cybersecurity – Cisco Networking Academy
-
-Data Analytics Essentials – Cisco Networking Academy
-
-Leadership & Activities
-
-Decoration Team Head – College Function (planned and coordinated event execution)
-
-Coding Profiles
-
-GitHub: github.com/sonammaan222-source
-
-LeetCode: leetcode.com/u/SonamMaan222
-
-Codeforces: codeforces.com/profile/SonamMaan222
-
-HackerRank: hackerrank.com/profile/sonammaan222</div>
-                <div className="text-xs text-neutral-600">
+            <div className="rounded-2xl bg-white/95 text-neutral-900 p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform overflow-y-auto max-h-[520px]">
+              {/* Header */}
+              <div className="border-b-2 border-neutral-800 pb-4 mb-5">
+                <h3 className="font-display font-bold text-2xl text-neutral-900 tracking-tight">SONAM MAAN</h3>
+                <p className="text-sm font-medium text-neutral-700 mt-1">B.Tech CS & IT | Aspiring Software Developer</p>
+                <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-[11px] text-neutral-600">
+                  <span>Pune, Maharashtra</span>
+                  <span>•</span>
+                  <a href="https://github.com/sonammaan222-source" className="underline-offset-2 hover:underline">GitHub</a>
+                  <span>•</span>
+                  <a href="https://www.linkedin.com/in/sonam-maan-860409332/" className="underline-offset-2 hover:underline">LinkedIn</a>
                 </div>
               </div>
-              <div className="mt-4 space-y-3 text-[10px] text-neutral-700">
-                <div>
-                  <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                  </div>
-                  <div className="mt-1">
-                  </div>
-                  <div className="text-neutral-500">
-                  </div>
-                </div>
-                <div>
-                  <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                  </div>
-                  <div className="mt-1">
-                  </div>
-                </div>
-                <div>
-                  <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                  </div>
-                  <div className="mt-1">
-                  </div>
-                </div>
+
+              {/* Professional Summary */}
+              <ResumeSection icon={<Sparkles className="size-3.5" />} title="Professional Summary">
+                <p className="text-[11px] leading-relaxed text-neutral-700">
+                  Second-year B.Tech student in Computer Science and Information Technology with strong academic performance (CGPA: 9.1). Interested in software development, scalable web applications, and continuous learning across AI, data, and cybersecurity.
+                </p>
+              </ResumeSection>
+
+              {/* Education */}
+              <ResumeSection icon={<GraduationCap className="size-3.5" />} title="Education">
                 <div className="space-y-1">
-                  <div className="h-1 w-full bg-neutral-200 rounded" />
-                  <div className="h-1 w-4/5 bg-neutral-200 rounded" />
-                  <div className="h-1 w-3/5 bg-neutral-200 rounded" />
+                  <div className="flex items-baseline justify-between gap-2">
+                    <h4 className="font-semibold text-[12px] text-neutral-900">B.Tech — Computer Science & IT</h4>
+                    <span className="text-[10px] text-neutral-500 font-mono shrink-0">2024 — 2028</span>
+                  </div>
+                  <p className="text-[11px] text-neutral-600">Alta School of Technology, Ajinkya D.Y. Patil Institute of Engineering, Pune</p>
+                  <div className="flex gap-3 mt-1">
+                    <span className="text-[10px] bg-neutral-100 border border-neutral-200 rounded px-2 py-0.5 font-medium text-neutral-700">CGPA: 9.1</span>
+                    <span className="text-[10px] bg-neutral-100 border border-neutral-200 rounded px-2 py-0.5 font-medium text-neutral-700">2nd Year</span>
+                  </div>
                 </div>
-              </div>
+              </ResumeSection>
+
+              {/* Technical Skills */}
+              <ResumeSection icon={<Code2 className="size-3.5" />} title="Technical Skills">
+                <div className="space-y-2">
+                  <SkillRow label="Languages" values={["C", "Java", "Python"]} />
+                  <SkillRow label="Frontend" values={["HTML", "CSS"]} />
+                  <SkillRow label="Backend" values={["Java"]} />
+                  <SkillRow label="Database" values={["MySQL"]} />
+                  <div className="pt-1">
+                    <p className="text-[10px] font-semibold text-neutral-900 uppercase tracking-wider mb-1.5">Areas of Interest</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {["Generative AI", "Data Science", "Data Analytics", "Cybersecurity"].map((tag) => (
+                        <span key={tag} className="text-[10px] bg-indigo-50 text-indigo-700 border border-indigo-100 rounded-full px-2 py-0.5 font-medium">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </ResumeSection>
+
+              {/* Projects */}
+              <ResumeSection icon={<Briefcase className="size-3.5" />} title="Projects">
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex items-baseline justify-between gap-2">
+                      <h4 className="font-semibold text-[12px] text-neutral-900">Access Notes</h4>
+                      <a href="https://accessnotesapp.vercel.app/" target="_blank" rel="noreferrer" className="text-[10px] text-indigo-600 hover:underline flex items-center gap-0.5 shrink-0">
+                        Live <ExternalLink className="size-2.5" />
+                      </a>
+                    </div>
+                    <p className="text-[11px] text-neutral-600 mt-0.5">Modern note-taking platform for organizing notes and content efficiently.</p>
+                  </div>
+                  <div>
+                    <div className="flex items-baseline justify-between gap-2">
+                      <h4 className="font-semibold text-[12px] text-neutral-900">Cosmic Glow Insights</h4>
+                      <a href="https://cosmic-glow-insights.lovable.app/" target="_blank" rel="noreferrer" className="text-[10px] text-indigo-600 hover:underline flex items-center gap-0.5 shrink-0">
+                        Live <ExternalLink className="size-2.5" />
+                      </a>
+                    </div>
+                    <p className="text-[11px] text-neutral-600 mt-0.5">Astrology & numerology themed web experience with guided prediction flow and immersive UI.</p>
+                  </div>
+                </div>
+              </ResumeSection>
+
+              {/* Certifications */}
+              <ResumeSection icon={<Award className="size-3.5" />} title="Certifications">
+                <ul className="space-y-1.5">
+                  {[
+                    "Generative AI & LLMs — Sunstone School of Technology (Feb 2026)",
+                    "Introduction to Data Science — Cisco Networking Academy",
+                    "Introduction to Cybersecurity — Cisco Networking Academy",
+                    "Data Analytics Essentials — Cisco Networking Academy",
+                  ].map((cert) => (
+                    <li key={cert} className="flex items-start gap-1.5 text-[11px] text-neutral-700">
+                      <span className="mt-1.5 size-1 rounded-full bg-emerald-500 shrink-0" />
+                      {cert}
+                    </li>
+                  ))}
+                </ul>
+              </ResumeSection>
+
+              {/* Leadership */}
+              <ResumeSection icon={<Users className="size-3.5" />} title="Leadership & Activities">
+                <p className="text-[11px] text-neutral-700">
+                  <span className="font-semibold text-neutral-900">Decoration Team Head</span> — College Function. Planned and coordinated event execution, managed team responsibilities, and ensured on-time delivery.
+                </p>
+              </ResumeSection>
+
+              {/* Coding Profiles */}
+              <ResumeSection icon={<Code2 className="size-3.5" />} title="Coding Profiles">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-[11px]">
+                  <a href="https://github.com/sonammaan222-source" target="_blank" rel="noreferrer" className="text-neutral-700 hover:text-indigo-600 transition-colors">GitHub</a>
+                  <a href="https://leetcode.com/u/SonamMaan222/" target="_blank" rel="noreferrer" className="text-neutral-700 hover:text-indigo-600 transition-colors">LeetCode</a>
+                  <a href="https://codeforces.com/profile/SonamMaan222" target="_blank" rel="noreferrer" className="text-neutral-700 hover:text-indigo-600 transition-colors">Codeforces</a>
+                  <a href="https://www.hackerrank.com/profile/sonammaan222" target="_blank" rel="noreferrer" className="text-neutral-700 hover:text-indigo-600 transition-colors">HackerRank</a>
+                </div>
+              </ResumeSection>
+
               <div className="absolute bottom-4 right-4 text-[9px] text-neutral-400">
                 <FileText className="size-3 inline" /> preview
               </div>
