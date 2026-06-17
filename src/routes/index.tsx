@@ -984,7 +984,7 @@ function Resume() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl bg-white/95 text-neutral-900 aspect-[3/4] p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform">
+            <div className="rounded-2xl bg-white/95 text-neutral-900 aspect-[3/4] p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform overflow-y-auto max-h-[500px]">
               <div className="border-b border-neutral-200 pb-3">
                 <div className="font-display font-bold text-xl whitespace-pre-wrap">SONAM MAAN
 
