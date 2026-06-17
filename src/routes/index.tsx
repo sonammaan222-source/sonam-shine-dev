@@ -949,6 +949,29 @@ function CodingProfiles() {
   );
 }
 
+function ResumeSection({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-5">
+      <div className="flex items-center gap-2 mb-2.5">
+        <span className="text-indigo-600">{icon}</span>
+        <h4 className="text-[10px] font-bold text-neutral-900 uppercase tracking-[0.15em]">{title}</h4>
+      </div>
+      <div className="pl-5 border-l-2 border-neutral-200">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function SkillRow({ label, values }: { label: string; values: string[] }) {
+  return (
+    <div className="flex items-baseline gap-2">
+      <span className="text-[10px] font-semibold text-neutral-900 uppercase tracking-wider min-w-[5.5rem] shrink-0">{label}</span>
+      <span className="text-[11px] text-neutral-700">{values.join(", ")}</span>
+    </div>
+  );
+}
+
 /* -------------------- RESUME -------------------- */
 function Resume() {
   return (
