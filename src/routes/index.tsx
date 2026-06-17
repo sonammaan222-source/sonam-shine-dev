@@ -984,30 +984,98 @@ function Resume() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl bg-white/95 text-neutral-900 aspect-[3/4] p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform">
+            <div className="rounded-2xl bg-white/95 text-neutral-900 aspect-[3/4] p-6 shadow-2xl rotate-2 hover:rotate-0 transition-transform overflow-y-auto max-h-[500px]">
               <div className="border-b border-neutral-200 pb-3">
-                <div className="font-display font-bold text-xl">Sonam Maan</div>
-                <div className="text-xs text-neutral-600">Aspiring Software Developer · Pune</div>
+                <div className="font-display font-bold text-xl whitespace-pre-wrap">SONAM MAAN
+
+B.Tech Student (Computer Science & Artificial Intelligence) | Aspiring Software Developer
+
+GitHub: github.com/sonammaan222-source
+LinkedIn: linkedin.com/in/sonam-maan-860409332
+LeetCode | Codeforces | HackerRank
+
+Professional Summary
+
+Second-year B.Tech student in Computer Science and Artificial Intelligence with strong academic performance (CGPA: 9.1). Interested in software development, scalable web applications, and continuous learning across AI, data, and cybersecurity.
+
+Education
+
+B.Tech – Computer Science and Artificial Intelligence
+Ajinkya D.Y. Patil Institute of Engineering, Pune (Anuta School of Technology)
+Current Year: Second Year | CGPA: 9.1
+
+Technical Skills
+
+Languages: C, Java, Python
+
+Frontend: HTML, CSS
+
+Backend: Java
+
+Database: MySQL
+
+Areas of Interest: Generative AI, Data Science, Data Analytics, Cybersecurity
+
+Projects
+
+Access Notes
+
+Modern note-taking platform for organizing notes and content.
+
+Live: https://accessnotesapp.vercel.app/
+
+Cosmic Glow Insights
+
+Astrology and numerology themed web experience with guided prediction flow and immersive UI.
+
+Live: https://cosmic-glow-insights.lovable.app/
+
+Certifications
+
+Generative AI & LLMs – Sunstone School of Technology (Feb 2026)
+
+Introduction to Data Science – Cisco Networking Academy
+
+Introduction to Cybersecurity – Cisco Networking Academy
+
+Data Analytics Essentials – Cisco Networking Academy
+
+Leadership & Activities
+
+Decoration Team Head – College Function (planned and coordinated event execution)
+
+Coding Profiles
+
+GitHub: github.com/sonammaan222-source
+
+LeetCode: leetcode.com/u/SonamMaan222
+
+Codeforces: codeforces.com/profile/SonamMaan222
+
+HackerRank: hackerrank.com/profile/sonammaan222</div>
+                <div className="text-xs text-neutral-600">
+                </div>
               </div>
               <div className="mt-4 space-y-3 text-[10px] text-neutral-700">
                 <div>
                   <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                    Education
                   </div>
-                  <div className="mt-1">B.Tech CS & AI — Ajinkya D.Y. Patil Institute</div>
-                  <div className="text-neutral-500">CGPA 9.1 · 2nd Year</div>
+                  <div className="mt-1">
+                  </div>
+                  <div className="text-neutral-500">
+                  </div>
                 </div>
                 <div>
                   <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                    Skills
                   </div>
-                  <div className="mt-1">C, Java, Python, HTML, CSS, MySQL</div>
+                  <div className="mt-1">
+                  </div>
                 </div>
                 <div>
                   <div className="font-semibold text-neutral-900 uppercase tracking-wider text-[9px]">
-                    Projects
                   </div>
-                  <div className="mt-1">Access Notes — note-taking web app</div>
+                  <div className="mt-1">
+                  </div>
                 </div>
                 <div className="space-y-1">
                   <div className="h-1 w-full bg-neutral-200 rounded" />
