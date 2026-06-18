@@ -1242,6 +1242,22 @@ function Contact() {
           </button>
         </form>
       </div>
+
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogContent className="bg-surface-elevated border-white/10 text-foreground max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-foreground">Webhook Response</DialogTitle>
+            <DialogDescription className="text-muted-foreground">
+              Here is the response received from the server.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mt-2 rounded-xl bg-black/30 p-4 border border-white/10">
+            <pre className="text-xs text-accent whitespace-pre-wrap break-words font-mono">
+              {webhookResponse ?? "No response"}
+            </pre>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
