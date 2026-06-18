@@ -1141,7 +1141,22 @@ function Contact() {
     const form = e.currentTarget;
     const data = new FormData(form);
     const name = String(data.get("name") || "");
-    await new Promise((r) => setTimeout(r, 600));
+    const email = String(data.get("email") || "");
+    const message = String(data.get("message") || "");
+
+    try {
+      await fetch(
+        "https://sonammaan-23.app.n8n.cloud/webhook-test/d716e6ad-fc37-43ae-91f2-b209531acef4",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        }
+      );
+    } catch {
+      // silently ignore network errors so the user still sees feedback
+    }
+
     setSubmitting(false);
     form.reset();
     toast.success(`Thanks${name ? ", " + name : ""}! I'll get back to you soon.`);
