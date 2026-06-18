@@ -31,6 +31,13 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -1134,6 +1141,8 @@ function Resume() {
 /* -------------------- CONTACT -------------------- */
 function Contact() {
   const [submitting, setSubmitting] = useState(false);
+  const [webhookResponse, setWebhookResponse] = useState<string | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -1145,7 +1154,7 @@ function Contact() {
     const message = String(data.get("message") || "");
 
     try {
-      await fetch(
+      const res = await fetch(
         "https://sonammaan-23.app.n8n.cloud/webhook-test/d716e6ad-fc37-43ae-91f2-b209531acef4",
         {
           method: "POST",
@@ -1153,6 +1162,9 @@ function Contact() {
           body: JSON.stringify({ name, email, message }),
         }
       );
+      const body = await res.text();
+      setWebhookResponse(body);
+      setDialogOpen(true);
     } catch {
       // silently ignore network errors so the user still sees feedback
     }
@@ -1230,6 +1242,22 @@ function Contact() {
           </button>
         </form>
       </div>
+
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogContent className="bg-surface-elevated border-white/10 text-foreground max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-foreground">Webhook Response</DialogTitle>
+            <DialogDescription className="text-muted-foreground">
+              Here is the response received from the server.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mt-2 rounded-xl bg-black/30 p-4 border border-white/10">
+            <pre className="text-xs text-accent whitespace-pre-wrap break-words font-mono">
+              {webhookResponse ?? "No response"}
+            </pre>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
