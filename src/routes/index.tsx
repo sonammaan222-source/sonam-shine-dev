@@ -1141,6 +1141,8 @@ function Resume() {
 /* -------------------- CONTACT -------------------- */
 function Contact() {
   const [submitting, setSubmitting] = useState(false);
+  const [webhookResponse, setWebhookResponse] = useState<string | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -1152,7 +1154,7 @@ function Contact() {
     const message = String(data.get("message") || "");
 
     try {
-      await fetch(
+      const res = await fetch(
         "https://sonammaan-23.app.n8n.cloud/webhook-test/d716e6ad-fc37-43ae-91f2-b209531acef4",
         {
           method: "POST",
@@ -1160,6 +1162,9 @@ function Contact() {
           body: JSON.stringify({ name, email, message }),
         }
       );
+      const body = await res.text();
+      setWebhookResponse(body);
+      setDialogOpen(true);
     } catch {
       // silently ignore network errors so the user still sees feedback
     }
