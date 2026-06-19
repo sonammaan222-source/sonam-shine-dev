@@ -724,6 +724,103 @@ function Projects() {
           </div>
         </motion.div>
 
+        {/* Second Project — Cosmic Glow Insights */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="relative glass rounded-3xl overflow-hidden mt-10"
+        >
+          <div className="grid lg:grid-cols-[1.1fr_1fr]">
+            {/* Left content */}
+            <div className="p-8 sm:p-10 lg:p-12 space-y-6">
+              <div className="flex items-center gap-3">
+                <span className="text-xs px-3 py-1 rounded-full bg-accent/15 text-accent border border-accent/30">
+                  Live
+                </span>
+                <span className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Personal Project · 2026
+                </span>
+              </div>
+              <h3 className="font-display font-bold text-3xl sm:text-4xl">Cosmic Glow Insights.</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                An astrology and numerology themed web experience that generates personalized
+                insights from birth details — zodiac readings, life path guidance, relationship
+                analysis, and lucky numbers with an immersive, modern UI.
+              </p>
+
+              <div className="grid sm:grid-cols-3 gap-3">
+                <MiniBlock label="Problem" value="Generic, cluttered horoscope sites" />
+                <MiniBlock label="Solution" value="Clean, guided prediction flow" />
+                <MiniBlock label="Outcome" value="Live, actively visited" />
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {["Web App", "Astrology", "Numerology", "React"].map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-muted-foreground"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-3 pt-2">
+                <a
+                  href="https://cosmic-glow-insights.lovable.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-3 text-sm font-medium hover:opacity-90 transition"
+                >
+                  <ExternalLink className="size-4" /> Live Demo
+                </a>
+                <a
+                  href="https://github.com/sonammaan222-source"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full glass px-5 py-3 text-sm font-medium hover:bg-white/10 transition"
+                >
+                  <GithubIcon className="size-4" /> View Code
+                </a>
+              </div>
+            </div>
+
+            {/* Right preview */}
+            <div className="relative bg-gradient-to-br from-secondary/20 via-transparent to-accent/20 p-8 sm:p-10 lg:p-12 min-h-[360px] flex items-center">
+              <div className="absolute inset-0" style={{ background: "var(--gradient-glow)" }} />
+              <div className="relative w-full space-y-3">
+                <BrowserMock>
+                  <div className="p-5 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="font-display font-semibold text-foreground">Cosmic Readings</div>
+                      <div className="text-xs text-muted-foreground">2026</div>
+                    </div>
+                    <div className="space-y-2">
+                      {["Zodiac Reading", "Numerology Insights", "Career Tendencies", "Lucky Numbers & Colors"].map((n, i) => (
+                        <div
+                          key={n}
+                          className="rounded-lg bg-white/5 border border-white/10 p-3 text-xs flex items-center gap-2"
+                        >
+                          <span className="size-1.5 rounded-full bg-accent shrink-0" />
+                          <div className="text-foreground font-medium">{n}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </BrowserMock>
+                <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
+                  <span>cosmic-glow-insights.lovable.app</span>
+                  <span className="flex items-center gap-1">
+                    <span className="size-1.5 rounded-full bg-accent" /> Live
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* features grid */}
         <div className="grid sm:grid-cols-3 gap-5 mt-10">
           <FeatureCard
