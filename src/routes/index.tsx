@@ -613,11 +613,11 @@ function Projects() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-10 items-end mb-12">
           <div>
-            <SectionLabel>Featured Project</SectionLabel>
+            <SectionLabel>Featured Projects</SectionLabel>
             <SectionHeading>Selected work — built end to end.</SectionHeading>
           </div>
           <p className="text-muted-foreground text-sm max-w-md lg:justify-self-end">
-            My goal is to build software that people actually find useful. Here's a project I've
+            My goal is to build software that people actually find useful. Here's what I've
             been shaping recently.
           </p>
         </div>
